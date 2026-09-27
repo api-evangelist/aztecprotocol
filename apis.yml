@@ -113,7 +113,7 @@ x-coverage:
   evidence:
   - url: https://docs.aztec.network
     status: 200
-  checked: 2026-09-27
+  checked: '2026-09-27'
 x-enrichment:
   date: '2026-09-27'
   status: enriched
