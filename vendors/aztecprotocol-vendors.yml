@@ -1,0 +1,91 @@
+generated: '2026-09-27'
+method: probed
+source: pre-flight dossier (docs platform, portal detections) + CNAME chains and response headers of the hosts apis.yml names
+registry: all/0-working/vendors.yml
+areas_vocabulary:
+- documentation
+- developer-portal
+- api-gateway
+- cdn
+- hosting
+- sdk-generation
+- api-collections
+- status-page
+- support
+- community
+- identity
+- mcp-hosting
+vendors:
+- vendor: postman
+  name: Postman
+  area: api-collections
+  host: www.postman.com
+  evidence: https://www.postman.com/aztecprotocol/workspace
+  signal: url:postman.com
+  confidence: high
+  kin_score:
+  - postman_collection
+- vendor: cloudflare
+  name: Cloudflare
+  area: cdn
+  host: aztec.network
+  evidence: header:cf-ray
+  signal: header
+  confidence: high
+  kin_score:
+  - https_enforced
+  - hsts
+- vendor: cloudfront
+  name: Amazon CloudFront
+  area: cdn
+  host: install.aztec.network
+  evidence: header:x-amz-cf-id
+  signal: header
+  confidence: high
+  kin_score: []
+- vendor: discord
+  name: Discord
+  area: community
+  host: discord.com
+  evidence: https://discord.com/invite/aztec
+  signal: url:discord.com/invite
+  confidence: high
+  kin_score:
+  - community_present
+- vendor: docusaurus
+  name: Docusaurus
+  area: documentation
+  host: docs.aztec.network
+  evidence: markup:docusaurus
+  signal: docs-platform
+  confidence: medium
+  kin_score: []
+- vendor: netlify
+  name: Netlify
+  area: hosting
+  host: docs.aztec.network
+  evidence: cname:aztec-docs-dev.netlify.app
+  signal: docs-platform
+  confidence: medium
+  kin_score: []
+reliance:
+  areas_vendor_served:
+  - api-collections
+  - cdn
+  - community
+  - documentation
+  - hosting
+  vendor_count: 6
+  areas_observed: 12
+  share_of_observable_areas: 0.417
+  note: areas where a third party was DETECTED serving this provider; an area absent here was either self-run or not observed, and this script
+    cannot tell those apart
+checked:
+- 'docs-platform: docusaurus'
+- aztec.network (Website)
+- docs.aztec.network (Documentation)
+- aztec.network (DeveloperPortal)
+- docs.aztec.network (GettingStarted)
+- discord.com (Support)
+- www.postman.com (Postman)
+- install.aztec.network (baseURL)

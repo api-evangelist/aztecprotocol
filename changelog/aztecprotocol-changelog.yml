@@ -1,0 +1,30 @@
+generated: '2026-09-27'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.aztec.network/developers/docs/resources/migration_notes
+sources:
+- https://docs.aztec.network/developers/docs/resources/migration_notes
+- https://docs.aztec.network/developers/tags/migration
+entries:
+- breaking: true
+  highlights:
+  - Note types declared inside a contract must be pub.
+  - The sequencer skips building and proposing a checkpoint when p2p is enabled and it is connected to fewer than SEQ_MIN_PEERS_TO_PROPOSE peers
+    (default 1).
+  - JSON‑RPC internal errors now return code -32603.
+  - GET /status now returns a JSON body with per‑component health.
+  version: 5.2.0
+- breaking: true
+  highlights:
+  - History note nullification helpers renamed and restricted to own‑contract notes.
+  - set_as_fee_payer now asserts it is called during the setup phase.
+  - PXE stores are now selected by (l1ChainId, rollupAddress, schemaVersion) instead of being wiped on mismatch.
+  version: 5.0.1
+- breaking: true
+  highlights:
+  - Local PXE database is reset on upgrade.
+  - TestEnvironmentOptions::with_tagging_secret_strategy replaced.
+  version: 5.0.0
+current_version: 5.2.0
+note: Versioning scheme follows semantic versioning (major.minor.patch).
+docs: https://docs.aztec.network/developers/docs/resources/migration_notes

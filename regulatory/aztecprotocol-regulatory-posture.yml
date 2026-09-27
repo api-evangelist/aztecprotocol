@@ -1,0 +1,12 @@
+generated: 2026-09-27
+method: probed
+source: https://aztec.network/privacy-policy
+signals:
+  data_subject_request:
+    evidence:
+      - source: https://aztec.network/privacy-policy
+        http_status: 200
+        fetched: /tmp/aztec_privacy.html
+        quote: "You have the right to know whether and how we process Personal Data about you and request a copy of such Personal Data; you have the right to correct or supplement inaccurate data; you can request erasure of your Personal Data; you can object to processing based on legitimate interests; you can restrict processing; you can request portability of your Personal Data; you can withdraw consent at any time."
+        section: "Your Choices And Rights Over Your Personal Data"
+        note: "Lists all GDPR‑style data subject rights, indicating a comprehensive data subject request policy."

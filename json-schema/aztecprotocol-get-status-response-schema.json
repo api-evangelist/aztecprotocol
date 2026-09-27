@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/aztecprotocol/main/json-schema/aztecprotocol-get-status-response-schema.json",
+  "title": "GetStatusResponse",
+  "x-generated": "2026-09-27",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/aztecprotocol-openapi-generated.yml#/components/schemas/GetStatusResponse",
+  "type": "object",
+  "properties": {
+    "ok": {
+      "type": "boolean",
+      "description": "overall health flag"
+    },
+    "components": {
+      "type": "object",
+      "description": "map of component names to their health status"
+    },
+    "components.p2p.healthy": {
+      "type": "boolean",
+      "description": "whether the p2p component is healthy"
+    },
+    "components.p2p.enabled": {
+      "type": "boolean",
+      "description": "whether the p2p component is enabled"
+    },
+    "components.p2p.connectedPeers": {
+      "type": "integer",
+      "description": "number of connected peers"
+    }
+  }
+}

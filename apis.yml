@@ -1,23 +1,122 @@
 aid: aztecprotocol
+
 name: Aztecprotocol
-description: 'Aztecprotocol is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn.prod.website-files.com/6847005bc403085c1aa846e0/689cacb514469cdab7b6c2cf_Aztec-cover.png
+
+description: Aztecprotocol is a privacy‑first, zero‑knowledge rollup (zkRollup) built on Ethereum that enables confidential transactions and private
+  smart contracts. It provides a decentralized, privacy‑preserving Layer 2 solution, offering developers tools, SDKs, and documentation to build
+  secure, scalable applications while keeping transaction data hidden from public view.
+
 url: https://raw.githubusercontent.com/api-evangelist/aztecprotocol/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
-- Company
-apis: []
+- Blockchain
+- Privacy
+- zkRollup
+- Ethereum
+- Decentralized
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Spectral
+  url: rules/aztecprotocol-rules.yml
+- type: JSONLD
+  url: json-ld/aztecprotocol-context.jsonld
+- type: Vocabulary
+  url: vocabulary/aztecprotocol-vocabulary.yml
+- type: DataModel
+  url: data-model/aztecprotocol-data-model.yml
+- type: ChangeLog
+  url: changelog/aztecprotocol-changelog.yml
+- type: Conformance
+  url: conformance/aztecprotocol-conformance.yml
+- type: LLMsTxt
+  url: llms/aztecprotocol-llms.txt
+- type: Hosts
+  url: hosts/aztecprotocol-hosts.yml
+- type: Vendors
+  url: vendors/aztecprotocol-vendors.yml
+- type: Newsroom
+  url: https://aztec.network/media
+- type: DomainSecurity
+  url: security/aztecprotocol-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/aztecprotocol
+  url: https://aztec.network
+- type: Documentation
+  url: https://docs.aztec.network
+- type: DeveloperPortal
+  url: https://aztec.network/developers
+- type: GettingStarted
+  url: https://docs.aztec.network/developers/getting_started_on_testnet
+- type: Support
+  url: https://discord.com/invite/aztec
+- type: Blog
+  url: https://aztec.network/blog
+- type: GitHubOrganization
+  url: https://github.com/AztecProtocol
+- type: Roadmap
+  url: https://aztec.network/roadmap
+- type: Pricing
+  url: https://aztec.network/token
+- type: TermsOfService
+  url: https://aztec.network/terms-of-service
+- type: PrivacyPolicy
+  url: https://aztec.network/privacy-policy
+- type: Postman
+  url: https://www.postman.com/aztecprotocol/workspace
+
+apis:
+- name: Aztec Protocol API
+  description: Aztec provides a privacy‑first zkRollup API for developers.
+  humanURL: https://docs.aztec.network
+  baseURL: null
+  aid: aztecprotocol:aztec-protocol-api
+- aid: aztecprotocol:aztecprotocol-api
+  name: Aztecprotocol API
+  description: 'Aztecprotocol API as documented publicly: 4 operations. Contract generated from the documentation by API Evangelist (2026-09-27);
+
+    not the provider''s own document.'
+  humanURL: https://docs.aztec.network/developers/docs/resources/migration_notes
+  baseURL: https://install.aztec.network
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/aztecprotocol-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/aztecprotocol-get-status-response-schema.json
+  - type: JSONSchema
+    url: json-schema/aztecprotocol-post-request-schema.json
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Documentation is rendered via Docusaurus JavaScript and no machine‑readable OpenAPI spec was found.
+  evidence:
+  - url: https://docs.aztec.network
+    status: 200
+  checked: 2026-09-27
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 18
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
