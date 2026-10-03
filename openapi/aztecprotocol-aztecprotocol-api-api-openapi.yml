@@ -1,0 +1,91 @@
+openapi: 3.2.0
+info:
+  title: Aztecprotocol API
+  version: '2026-09-27'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-09-27: 4 operation(s) read from 8 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Aztecprotocol has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 3
+    documentation: 1
+    pages-with-code: 7
+    pages-read: 8
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-09-27'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://docs.aztec.network/developers/docs/resources/migration_notes
+  - https://docs.aztec.network/developers/docs/tutorials/contract_tutorials/token_contract
+  - https://docs.aztec.network/developers/docs/tutorials/contract_tutorials/counter_contract
+  - https://docs.aztec.network/developers/getting_started_on_testnet
+  - https://docs.aztec.network/developers/getting_started_on_local_network
+  - https://docs.aztec.network/developers/docs/tutorials/testing_governance_rollup_upgrade
+  - https://docs.aztec.network/developers/docs/tutorials/contract_tutorials/recursive_verification
+  - https://docs.aztec.network/developers/docs/tutorials/js_tutorials/webapp/the-contract
+servers:
+- url: https://install.aztec.network
+tags:
+- name: Aztecprotocol API
+paths:
+  /:
+    get:
+      operationId: get
+      tags:
+      - Aztecprotocol API
+      summary: GET /
+      x-source: https://docs.aztec.network/developers/getting_started_on_local_network
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -sL https://install.aztec.network) \n This will install the following tools and add them to your PATH : \n aztec - compiles and tests Aztec contracts and launches various infrastructure subsystems (full local network, sequencer, prover, PXE, etc.) and provides utility commands to interact with the network \n aztec-up - a version manager for the Aztec toolchain. Use aztec-up install <version> to "
+    post:
+      operationId: post
+      tags:
+      - Aztecprotocol API
+      summary: POST /
+      x-source: https://docs.aztec.network/developers/docs/tutorials/testing_governance_rollup_upgrade
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -s http://localhost:8080 -X POST -H \"Content-Type: application/json\" \\ -d '{\"jsonrpc\":\"2.0\",\"method\":\"aztec_getNodeInfo\",\"params\":[],\"id\":1}' | jq '.result.l1ContractAddresses' \n Note the registryAddress from the output. \n Step 2: Download the l1-contracts bundle ​ \n The @aztec/l1-artifacts npm package bundles a self-contained Foundry project with the L1 contract sources, prebuilt artifacts, "
+  /5.2.0:
+    get:
+      operationId: get_5_2_0
+      tags:
+      - Aztecprotocol API
+      summary: GET /5.2.0
+      x-source: https://docs.aztec.network/developers/docs/tutorials/contract_tutorials/token_contract
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -sL https://install.aztec.network/5.2.0) ) \n If you haven't completed the Counter Contract tutorial, please do so first as we'll skip the basic setup steps covered there. \n What We're Building ​ \n We'll create BOB tokens with: \n Public and Private minting : Giggle can mint tokens in private or public \n Public and Private transfers : Employees can spend tokens at Bob's clinic with full privacy"
+components:
+  schemas:
+    PostRequest:
+      type: object
+      properties:
+        jsonrpc:
+          type: string
+        method:
+          type: string
+        params:
+          type: array
+          items: {}
+        id:
+          type: integer
