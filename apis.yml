@@ -23,7 +23,17 @@ created: '2026-09-27'
 
 modified: '2026-09-27'
 
+x-docs-platform: docusaurus
+x-docs-platform-confidence: medium
+x-docs-platform-checked: 2026-10-03
+x-docs-hosting: netlify
 tags:
+- Blockchain
+- Privacy
+- ZK-Rollup
+- Ethereum
+- Decentralized
+tags_raw:
 - Blockchain
 - Privacy
 - zkRollup
