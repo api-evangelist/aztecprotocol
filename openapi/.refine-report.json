@@ -17,7 +17,10 @@
     "aztecprotocol-openapi-generated.yml: tagged paths POST / -> Aztecprotocol API",
     "aztecprotocol-openapi-generated.yml: tagged paths GET /5.2.0 -> Aztecprotocol API",
     "aztecprotocol-openapi-generated.yml: declared missing tag: Aztecprotocol API",
-    "apis.yml register: written (+2 apis, 3 total)"
+    "apis.yml register: already-registered"
   ],
-  "skipped": []
+  "skipped": [
+    "aztecprotocol-aztecprotocol-api-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "aztecprotocol-status-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
