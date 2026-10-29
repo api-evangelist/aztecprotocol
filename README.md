@@ -64,5 +64,118 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Aztecprotocol is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://equityzen.com/company/aztecprotocol
+Aztecprotocol is a privacy‑first, zero‑knowledge rollup (zkRollup) built on Ethereum that enables confidential transactions and private smart contracts. It provides a decentralized, privacy‑preserving Layer 2 solution, offering developers tools, SDKs, and documentation to build secure, scalable applications while keeping transaction data hidden from public view.
+
+**Areas:** Blockchain · Privacy · ZK-Rollup · Ethereum · Decentralized
+
+## Aztecprotocol on APIs.io
+
+Everything profiled for Aztecprotocol is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/aztecprotocol/](https://apis.io/providers/aztecprotocol/)** — or go straight to one of the APIs or properties below.
+
+### APIs (3)
+
+- [Aztec Protocol API](https://apis.io/apis/aztecprotocol/aztec-protocol-api/) — Aztec provides a privacy‑first zkRollup API for developers.
+- [Aztecprotocol Aztecprotocol API](https://apis.io/apis/aztecprotocol/aztecprotocol-aztecprotocol-api-api/) — The Aztecprotocol API API from Aztecprotocol — 2 operation(s) for aztecprotocol api.
+- [Aztecprotocol Status API](https://apis.io/apis/aztecprotocol/aztecprotocol-status-api/) — The Status API from Aztecprotocol — 1 operation(s) for status.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [aztecprotocol-mcp.yml](https://apis.io/servers/aztecprotocol/aztecprotocol-mcp-yml/)
+
+#### JSON Schema (2)
+
+The data models the API reads and writes.
+
+- [GetStatusResponse](https://apis.io/schemas/aztecprotocol/aztecprotocol-get-status-response/)
+- [PostRequest](https://apis.io/schemas/aztecprotocol/aztecprotocol-post-request/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Aztecprotocol Context](https://apis.io/jsonld/aztecprotocol/aztecprotocol-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Aztecprotocol API Rules](https://apis.io/rules/aztecprotocol/aztecprotocol-rules/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Aztecprotocol Domain Security](https://apis.io/security/aztecprotocol/aztecprotocol-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://aztec.network)
+- [Documentation](https://docs.aztec.network)
+- [Getting started](https://docs.aztec.network/developers/getting_started_on_testnet)
+- [Pricing](https://aztec.network/token)
+- [Support](https://discord.com/invite/aztec)
+- [Blog](https://aztec.network/blog)
+- [Terms of service](https://aztec.network/terms-of-service)
+- [Privacy policy](https://aztec.network/privacy-policy)
+- [GitHub](https://github.com/AztecProtocol)
+
+## API Evangelist rating
+
+**Kin Score 33.0** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 71.4 |
+| Contract quality | 20.2 |
+| Contract governance | 22.0 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 42.9 |
+| Access clarity | 31.6 |
+
+**Agent readiness 12.9** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 18.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/aztecprotocol/](https://apis.io/providers/aztecprotocol/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Aztecprotocol: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/aztecprotocol/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
